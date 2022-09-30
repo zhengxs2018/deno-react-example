@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "dev": "DENO_NPM_REGISTRY=https://registry.npmmirror.com deno run -A --unstable npm:vite",
+    "dev": "DENO_NPM_REGISTRY=https://registry.npmmirror.com deno run -A --unstable --node-modules-dir npm:vite",
     "build": "DENO_NPM_REGISTRY=https://registry.npmmirror.com deno run -A --unstable --node-modules-dir npm:vite build",
     "preview": "DENO_NPM_REGISTRY=https://registry.npmmirror.com deno run -A --unstable --node-modules-dir npm:vite preview",
     "serve": "DENO_NPM_REGISTRY=https://registry.npmmirror.com deno run --allow-net --allow-read https://deno.land/std@0.157.0/http/file_server.ts dist/"
